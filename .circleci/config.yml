@@ -10,7 +10,7 @@ jobs:
     executor: my-executor
     steps:
       - checkout
-      - run npm i
+      - run: npm i
       - save_cache:
           key: "npm packages"
           paths:
